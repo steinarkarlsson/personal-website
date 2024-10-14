@@ -4,18 +4,17 @@ import Footer from '@/app/ui/Footer';
 export default function AboutMe() {
     return (
         <div className='flex flex-col'>
-            <div className='flex'>
-                <div>
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-5'>
+                <div >
                     <h1>Steinar Karlsson</h1>
                     <Footer/>
                 </div>
-
                 <Image
                     src={'/profile.png'}
                     width={200}
                     height={200}
                     alt={'Steinar Karlsson'}
-                    className="z-0 rounded-full"
+                    className="z-0"
                 />
             </div>
             <div className='flex pt-10'>

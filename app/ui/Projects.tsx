@@ -3,7 +3,7 @@ import ProjectCard from '@/app/ui/ProjectCard';
 export default function Projects() {
     return (
         <>
-            <h2>Projects</h2>
+            <h2>Personal Projects</h2>
             <div className='flex flex-col justify-center items-center gap-8 w-full'>
                 <ProjectCard
                     title={'MiniCollection.app'}
@@ -16,7 +16,7 @@ export default function Projects() {
                 <ProjectCard
                     title={'Askja'}
                     description={'A white label employee performance review platform. Create your employees and pre-made KPIs, and the app takes care of the rest. This features a 3 tiered performance review: Self Review -> Manager Review -> HR Review with the ability to request changes any KPI.'}
-                    imageURL={'/projects/performus.png'}
+                    imageURL={'/projects/performus.jpg'}
                     tech={['Typescript', 'React', 'Firebase', 'Cloud Functions', 'OAuth']}
                     githubURL={'https://github.com/steinarkarlsson/askja'}
                 />
