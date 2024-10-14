@@ -30,6 +30,11 @@ h2 {
     font-size: 28px;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 p {
     text-align: justify;
 }
@@ -42,4 +47,22 @@ span {
 
 b {
     color: darkgrey;
+}
+
+@layer components {
+    .border-transition {
+        border: 2px solid transparent;
+        background-image: linear-gradient(white, white), linear-gradient(to right, blue, pink);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        transition: border-color 1s ease-in-out;
+    }
+
+    .border-transition:hover {
+        border-color: transparent;
+    }
+}
+
+.bg-gradient-transition {
+    background: linear-gradient(135deg, black, #111A3E);
 }

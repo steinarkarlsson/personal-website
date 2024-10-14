@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-interface ContactIconProps {
+export interface IconProps {
     title: string,
-    link: string,
+    link?: string,
     iconLink: string,
 }
 
-export default function SocialIcon(props: ContactIconProps) {
+export default function SocialIcon(props: IconProps) {
     return <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         href={props.link}

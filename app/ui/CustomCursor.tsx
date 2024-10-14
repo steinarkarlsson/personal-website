@@ -13,14 +13,14 @@ export default function CustomCursor() {
         const handleMouseOut = () => setIsHovering(false);
 
         window.addEventListener('mousemove', handleMouseMove);
-        document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span').forEach(el => {
+        document.querySelectorAll('p, a, h2, h3, h1, span').forEach(el => {
             el.addEventListener('mouseover', handleMouseOver);
             el.addEventListener('mouseout', handleMouseOut);
         });
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
-            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span').forEach(el => {
+            document.querySelectorAll('p, a, h2, h3, h1, span').forEach(el => {
                 el.removeEventListener('mouseover', handleMouseOver);
                 el.removeEventListener('mouseout', handleMouseOut);
             });
@@ -33,8 +33,8 @@ export default function CustomCursor() {
             style={{
                 top: `${position.y}px`,
                 left: `${position.x}px`,
-                width: isHovering ? '5rem' : '2.5rem',
-                height: isHovering ? '5rem' : '2.5rem',
+                width: isHovering ? '7rem' : '2.5rem',
+                height: isHovering ? '7rem' : '2.5rem',
                 transition: 'width 0.3s, height 0.3s'
             }}
         />

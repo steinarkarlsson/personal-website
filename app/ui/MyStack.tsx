@@ -1,11 +1,14 @@
-export default function Skills() {
+export default function MyStack() {
     return (
         <>
             <h2>My Stack</h2>
 
             <p><b>Frontend Development •</b> I use <span>React</span> with frameworks like <span>Next.js</span> to
                 build fast, SEO-friendly
-                applications, styled with <span>TailwindCSS</span>, <span>MUI</span>, and
+                applications. I choose Next.js because of their focus on top DX while also being able to provide great
+                user experience with tech like SSR. For styling I prefer <span>TailwindCSS</span> for my personal projects, but I
+                also
+                use <span>MUI</span> or similar UI libraries for larger projects with
                 traditional <span>HTML/CSS</span>.
             </p>
 
@@ -37,15 +40,17 @@ export default function Skills() {
             </p>
 
 
-            <p><b>Testing & Quality Assurance •</b> I write comprehensive tests
+            <p><b>Testing & Quality Assurance •</b> I write tests
                 with <span>Jest</span>, <span>Cypress</span>, <span>Playwright</span>,
-                and <span>Cucumber</span> to ensure code reliability and performance.
+                and <span>Cucumber</span> to ensure code reliability and performance. I am a proponent for integration
+                tests in general, while I do think unit tests are applicable for pure functions.
             </p>
 
 
             <p><b>Code Quality & Version Control •</b> I maintain consistent code style
                 using <span>ESLint</span> and <span>Prettier</span>, and manage code
-                versions effectively with <span>Git</span>.
+                versions with <span>Git</span>. As long as the style conventions are consistent within a project, then I
+                am happy.
             </p>
         </>
     )
