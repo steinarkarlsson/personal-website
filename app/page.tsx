@@ -8,11 +8,11 @@ import Footer from '@/app/ui/Footer';
 import ScrollButton from '@/app/ui/ScrollButton';
 
 export default function Home() {
-
-
     return (
-        <div className="relative cursor-none bg-gradient-transition">
-            <CustomCursor/>
+        <div className="relative lg:cursor-none bg-gradient-transition">
+            <div className="hidden lg:block">
+                <CustomCursor/>
+            </div>
             <div
                 className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-16 font-[family-name:var(--font-geist-sans)]">
                 <main className="flex flex-col gap-8 row-start-2 items-center justify-center sm:items-start w-full lg:w-1/3">
